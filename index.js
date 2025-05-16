@@ -26,3 +26,7 @@ mongoose.connect(process.env.MONGO_URL)
 app.listen(PORT , (req,res)=> {
   console.log(`sever runs PORT is ${PORT}`)
 })
+app.use('/' , (req,res)=> {
+  res.send("Welocme food application")
+
+})
